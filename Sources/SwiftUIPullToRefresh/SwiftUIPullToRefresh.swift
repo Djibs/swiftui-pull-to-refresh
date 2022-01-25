@@ -65,7 +65,8 @@ public enum RefreshState {
 public typealias RefreshProgressBuilder<Progress: View> = (RefreshState) -> Progress
 
 // Default color of the rectangle behind the progress spinner
-public let defaultLoadingViewBackgroundColor = Color(UIColor.systemBackground)
+//public let defaultLoadingViewBackgroundColor = Color(UIColor.systemBackground)
+public let defaultLoadingViewBackgroundColor = Color(UIColor.blue)
 
 public struct RefreshableScrollView<Progress, Content>: View where Progress: View, Content: View {
   let showsIndicators: Bool // if the ScrollView should show indicators
